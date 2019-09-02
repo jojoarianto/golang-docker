@@ -14,5 +14,6 @@ func handler(w http.ResponseWriter, r *http.Request) {
 
 func main() {
 	http.HandleFunc("/", handler)
+	log.Infof("server running on port %d", 8080)
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }
