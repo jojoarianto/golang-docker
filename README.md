@@ -14,3 +14,14 @@ docker build --rm -f "Dockerfile" -t your-image-name-you-want:latest .
 ```bash 
 docker run -p 8080:8080 your-image-name
 ```
+
+- [opsional] create your docker-compose file
+- [opsional] build docker-compose into images
+```bash
+# this will build the images
+docker-compose build
+```
+- [opsional] run container
+```bash 
+docker-compose up
+```
